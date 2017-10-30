@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <!-- ======= ======= ======= head ======= ======= ======= -->
+	<head>
+	    <meta charset="utf-8">
+	    <title>starters</title>
+			<!-- Add icon library -->
+			<script type="text/javascript" src="/script.js"> </script>
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- == styles == -->
+		<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/styles.css">
+	</head>
+
+    <!-- ======= ======= ======= body ======= ======= ======= -->
+		<body>
+			<!-- <div id="imgbox">
+				<% if @page == "home" %>
+					<%= erb :home_img %>
+				<% end %>
+			</div> -->
+      <!-- ======= header ======= -->
+		<div id="bigbox">
+
+      <div id="header" class=“section”>
+				<div id="bubble">Bubble</div>
+				<div id="byB">Small space furniture by Baroque</div>
+
+      </div>
+
+        <!-- ======= menu ======= -->
+        <div id=“menu-container” class=“section”>
+            <%= erb :menu %>
+        </div>
+				<!-- ======= content ======= -->
+
+        <!-- ======= content ======= -->
+        <div id=“yield-container” class=“section”>
+            <%= yield %>
+        </div>
+        <!-- ======= footer ======= -->
+        <!-- <div id="footer" class=“section”>
+          footer
+        </div> -->
+		</div>
+        <!-- ======= scripts ======= -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
+        <!-- <script src=“/https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js“></script> -->
+    </body>
+</html>
